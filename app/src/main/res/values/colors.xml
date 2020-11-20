@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CD4B4B</color>
+    <color name="colorPrimaryDark">#9E3535</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="fleurRed">#CD4B4B</color>
+    <color name="fleurBg">#F5F3EF</color>
+    <color name="colorSubtitle">#757575</color>
+</resources>

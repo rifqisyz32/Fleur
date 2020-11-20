@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Fleur</string>
+    <string name="subtitle">- find your flower -</string>
+    <string name="arti_bunga">Cari Arti Bunga</string>
+    <string name="toko_bunga">Cari Toko Bunga</string>
+    <string name="test_dulu">test dulu</string>
+    <string name="nama_bunga">Nama Bunga</string>
+    <string name="arti">Arti Bunga :</string>
+    <string name="description">Deskripsi</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="cardview">Card View</string>
+    <string name="grid">Grid</string>
+    <string name="list">List</string>
+    <string name="deskripsi1">Deskripsi Bunga</string>
+    <string name="deskripsi2">Deskripsi Bunga Detail</string>
+    <string name="detail">Detail</string>
+    <string name="beli">Beli</string>
+    <string name="nama_toko">Nama Toko</string>
+    <string name="alamat">Alamat Toko</string>
+    <string name="deskripsi_toko">Deskripsi Toko</string>
+    <string name="dark_mode">Dark Mode</string>
+
+</resources>
