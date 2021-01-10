@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fleur</string>
+    <string name="subtitle">- find your flower -</string>
+    <string name="arti_bunga">Find Your Flower</string>
+    <string name="toko_bunga">Find Flower Store</string>
+    <string name="nama_bunga">Flower Name</string>
+    <string name="arti">Flower Means:</string>
+    <string name="description">Description</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="cardview">Card View</string>
+    <string name="grid">Grid</string>
+    <string name="list">List</string>
+    <string name="deskripsi1">Flower Description</string>
+    <string name="deskripsi2">Flower Description Detail</string>
+    <string name="detail">Detail</string>
+    <string name="beli">Buy</string>
+    <string name="nama_toko">Store Name</string>
+    <string name="alamat">Store Address</string>
+    <string name="deskripsi_toko">Store Description</string>
+    <string name="you_choose">You Choose</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Enter Flower Name</string>
+    <string name="search_hint2">Enter Store Name</string>
+    <string name="change_language_settings">Change Language</string>
+</resources>

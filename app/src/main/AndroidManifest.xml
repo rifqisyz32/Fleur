@@ -16,14 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".HomeActivity"
+            android:theme="@style/Menu"
+            android:label=" ">
+        </activity>
         <activity android:name=".MenuArtiBunga"
             android:theme="@style/Menu"
-            android:label="Arti Bunga">
+            android:label="@string/arti_bunga">
         </activity>
         <activity android:name=".MenuTokoBunga"
             android:theme="@style/Menu"
-            android:label="Toko Bunga">
+            android:label="@string/toko_bunga">
         </activity>
         <activity android:name=".DetailBunga"></activity>
     </application>

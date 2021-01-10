@@ -1,21 +1,31 @@
 package com.example.fleur;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
+
 import java.util.ArrayList;
 
 public class MenuArtiBunga extends AppCompatActivity {
-    private RecyclerView rvFlowers;
+        private RecyclerView rvFlowers;
         private ArrayList<Bunga> list = new ArrayList<>();
         private String title = "Cari Bunga";
 
-        @Override
+    @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.menu_arti_bunga);
@@ -24,13 +34,33 @@ public class MenuArtiBunga extends AppCompatActivity {
             rvFlowers.setHasFixedSize(true);
 
         list.addAll(DataBunga.getListData());
-        showRecyclerList();
-    }
+        showRecyclerList(); }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_bunga, menu);
-        return super.onCreateOptionsMenu(menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_bunga, menu);
+
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+
+        if (searchManager != null) {
+            SearchView searchView = (SearchView) (menu.findItem(R.id.search)).getActionView();
+            searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+            searchView.setQueryHint(getResources().getString(R.string.search_hint));
+            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextSubmit(String query) {
+                    Toast.makeText(MenuArtiBunga.this, query, Toast.LENGTH_SHORT).show();
+                    return true;
+                }
+
+                @Override
+                public boolean onQueryTextChange(String newText) {
+                    return false;
+                }
+            });
+        }
+        return true;
     }
 
     @Override
@@ -99,6 +129,6 @@ public class MenuArtiBunga extends AppCompatActivity {
     }
 
     private void showSelectedBunga(Bunga bunga) {
-         Toast.makeText(this, "Kamu memilih " + bunga.getName(), Toast.LENGTH_SHORT).show();
+         Toast.makeText(this, getResources().getString(R.string.you_choose) + " " + bunga.getName(), Toast.LENGTH_SHORT).show();
     }
 }
