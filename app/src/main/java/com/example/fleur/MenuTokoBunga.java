@@ -130,6 +130,6 @@ public class MenuTokoBunga extends AppCompatActivity {
     }
 
     private void showSelectedToko(Toko toko) {
-        Toast.makeText(this, "Kamu memilih " + toko.getName(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getResources().getString(R.string.you_choose) + " " + getResources().getString(toko.getName()), Toast.LENGTH_SHORT).show();
     }
 }

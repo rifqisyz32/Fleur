@@ -24,5 +24,51 @@
     <string name="search">Search</string>
     <string name="search_hint">Enter Flower Name</string>
     <string name="search_hint2">Enter Store Name</string>
+
+    <string name="anggrek">Orchid</string>
+    <string name="anyelir_putih">White Carnation</string>
+    <string name="anyelir_kuning">Yellow Carnation</string>
+    <string name="anyelir_merah">Red Carnation</string>
+    <string name="anyelir_pink">Pink Carnation</string>
+    <string name="anyelir_ungu">Purple Carnation</string>
+    <string name="daisy_putih">White Daisy</string>
+    <string name="daisy_kuning">Yellow Daisy</string>
+    <string name="daisy_ungu">Purple Daisy</string>
+    <string name="daisy_merah">Red Daisy</string>
+    <string name="daisy_pink">Pink Daisy</string>
+    <string name="daisy_orange">Orange Daisy</string>
+    <string name="herbras">Transvaal daisy</string>
+
+    <string name="anggrek_detail">Bunga anggrek dianggap romantis karena bunga ini melambangkan kecantikan, cinta, dan dapat menarik hati.</string>
+    <string name="anyelir_putih_detail">Bunga anyelir putih menyimbolkan rasa syukur, cinta yang murni, kesetiaan, dan cinta yang menggebu dan mendalam.</string>
+    <string name="anyelir_kuning_detail">Bunga anyelir kuning merupakan lambang penolakan, emosi, benci, sekaligus kecewa terhadap seseorang.</string>
+    <string name="anyelir_merah_detail">Bunga anyelir merah diartikan sebagai bentuk kekagumana dan persahabatan.</string>
+    <string name="anyelir_pink_detail">Bunga anyelir pink dikaitkan dengan cinta abadi seorang ibu dan kaum wanita.</string>
+    <string name="anyelir_ungu_detail">Bunga anyelir ungu dikaitkan dengan duka cita dan kreativitas, tetapi selain itu bunga ini melambangkan ketidakteraturan yang dimaksudkan kamu memiliki kemampuan untuk berubah sesuai dengan keinginannya.</string>
+    <string name="daisy_putih_detail">Bunga daisy putih melambangkan sebuah kesetiaan dan kepolosan bisa kamu pilih jika orang yang akan kamu beri rangkaian bunga ini adalah orang yang lemah lembut dan kalem.</string>
+    <string name="daisy_kuning_detail">Bunga daisy kuning mungkin akan mewakilkan perasaan kamu yang sedang senang dan bahagia. Jadi, jika kamu dan orang terkasih sedang merasa senang bisa memberikan bunga daisy dengan warna ini.</string>
+    <string name="daisy_ungu_detail">Bunga daisy ungu memiliki makna kelembutan dan misterius.</string>
+    <string name="daisy_merah_detail">Bunga daisy merah memiliki makna gairah cinta dengan gairah yang sangat besar.</string>
+    <string name="daisy_pink_detail">Bunga daisy merah muda memancarkan aura yang manis karena warna merah muda memang terlihat lembut.</string>
+    <string name="daisy_orange_detail">Bunga daisy orange memiliki arti bahagia dan suka cita.</string>
+    <string name="herbras_detail">Bunga herbras melambangkan suatu kecantikan dan bentuk syukur yang Anda sampaikan atas hadirnya seseorang yag Anda anggap penting.</string>
+
+    <string name="adisty_florist">Adisty Florist</string>
+    <string name="and_florist">And Florist</string>
+    <string name="adm_florist">Adm Florist</string>
+    <string name="ays_florist">Ays Florist</string>
+    <string name="black_rose_florist">Black Rose Florist</string>
+    <string name="distin_florist">Distin Florist</string>
+    <string name="els_florist">Els Florist</string>
+    <string name="fleur_tales">Fleur Tales</string>
+    <string name="adisty_florist_detail">Way Kandis, No telp 081278813326</string>
+    <string name="and_florist_detail">Jl. Purnawirawan Raya No.10, Labuhan Ratu, Langkapura, Kota Bandar Lampung, Lampung 35113, No telp 088276634282</string>
+    <string name="adm_florist_detail">Jl. Nusantara, Labuhan Ratu, Kec. Kedaton, Kota Bandar Lampung, Lampung 35132, No telp 081271975782</string>
+    <string name="ays_florist_detail">Jl. Bumi Manti II No.1, Kp. Baru, Kec. Kedaton, Kota Bandar Lampung, Lampung 35141, No telp 081540870565</string>
+    <string name="black_rose_florist_detail">Jl. Purnawirawan Raya No.97, Gn. Terang, Langkapura, Kota Bandar Lampung, Lampung 35113, No telp 0816342780</string>
+    <string name="distin_florist_detail">Jl. Purnawirawan II No.21, Gn. Terang, Langkapura, Kota Bandar Lampung, Lampung 35112, No telp 085279183255</string>
+    <string name="els_florist_detail">Jl Labuhan Ratu, Bandar Lampung, No telp 088706451533</string>
+    <string name="fleur_tales_detail">Jl. Cendana 4, Kedamaian, Kota Bandar Lampung, Lampung 35122, No telp 085106588185</string>
+
     <string name="change_language_settings">Change Language</string>
 </resources>

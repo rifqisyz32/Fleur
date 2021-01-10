@@ -1,31 +1,31 @@
 package com.example.fleur;
 
 public class Toko {
-    private String photo;
-    private String name;
-    private String from;
+    private int photo;
+    private int name;
+    private int from;
 
-    public String getPhoto() {
+    public int getPhoto() {
         return photo;
     }
 
-    public void setPhoto(String photo) {
+    public void setPhoto(int photo) {
         this.photo = photo;
     }
 
-    public String getName() {
+    public int getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(int name) {
         this.name = name;
     }
 
-    public String getFrom() {
+    public int getFrom() {
         return from;
     }
 
-    public void setFrom(String from) {
+    public void setFrom(int from) {
         this.from = from;
     }
 }

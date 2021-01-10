@@ -111,7 +111,6 @@ public class MenuArtiBunga extends AppCompatActivity {
             @Override
             public void onItemClicked(Bunga data) {
                 showSelectedBunga(data);
-
             }
         });
     }
@@ -129,6 +128,6 @@ public class MenuArtiBunga extends AppCompatActivity {
     }
 
     private void showSelectedBunga(Bunga bunga) {
-         Toast.makeText(this, getResources().getString(R.string.you_choose) + " " + bunga.getName(), Toast.LENGTH_SHORT).show();
+         Toast.makeText(this,getResources().getString(R.string.you_choose) + " " + getResources().getString(bunga.getName()), Toast.LENGTH_SHORT).show();
     }
 }
