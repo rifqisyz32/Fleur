@@ -1,60 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/arti_bunga"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
+<!--    tools:context=".DetailBunga">-->
+
 
     <ImageView
-        android:id="@+id/img_item_photo3"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:adjustViewBounds="true"
-        android:scaleType="fitXY"
-        android:src="@drawable/lotus" />
+        android:transitionName="bungaTN"
+        android:id="@+id/img_photo_detail"
+        android:layout_width="360dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/card_bg"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_item_name3"
-        style="@style/TextContent"
-        android:layout_width="match_parent"
+        android:transitionName="namaTN"
+        android:id="@+id/tv_name_detail"
+        style="@style/TextContent.Subtitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:lineSpacingMultiplier="1"
         android:text="@string/nama_bunga"
         android:textSize="24sp"
-        android:textAlignment="center"
-        android:textColor="@color/fleurRed" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40" />
 
     <TextView
+        android:transitionName="latinTN"
+        android:id="@+id/tv_name_latin"
         style="@style/TextContent.Subtitle"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/detail"
+        android:text="@string/nama_bunga"
+        android:textStyle="italic"
         android:textSize="12sp"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
 
     <TextView
-        android:id="@+id/tv_item_from3"
+        android:transitionName="descTN"
+        android:id="@+id/tv_desc_detail"
         style="@style/TextContent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/deskripsi2"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="380dp"
+        android:layout_height="190dp"
+        android:lineSpacingExtra="6dp"
         android:lineSpacingMultiplier="1"
-        android:textColor="@android:color/black"/>
+
+        android:text="@string/bunga_desc"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.700" />
 
     <Button
-        style="@style/ButtonGeneral"
-        android:layout_gravity="center"
-        android:text="@string/beli" />
+        android:transitionName="favTN"
+        android:id="@+id/btn_fav_bunga"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fav_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.900"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.900" />
 
-</LinearLayout>
+    <Button
+        android:transitionName="strTN"
+        android:id="@+id/btn_str_bunga"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/store_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.750"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.900"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

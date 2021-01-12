@@ -20,15 +20,12 @@
             android:theme="@style/Menu"
             android:label=" ">
         </activity>
-        <activity android:name=".MenuArtiBunga"
-            android:theme="@style/Menu"
-            android:label="@string/arti_bunga">
+        <activity android:name=".MenuArtiBunga">
         </activity>
         <activity android:name=".MenuTokoBunga"
             android:theme="@style/Menu"
             android:label="@string/toko_bunga">
         </activity>
-        <activity android:name=".DetailBunga"></activity>
     </application>
         <uses-permission android:name="android.permission.INTERNET"/>
 

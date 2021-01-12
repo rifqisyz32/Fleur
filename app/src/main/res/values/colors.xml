@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#CD4B4B</color>
+    <!--<color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#258bd6</color>-->
+
+    <color name="card_bg_color">#f6f6f6</color>
+    <color name="card_bg_dark_color">#0e0e0e</color>
+    <color name="title_text_color">#258bd6</color>
+    <color name="content_text_color">#999da4</color>
+
+    1<color name="colorPrimary">#CD4B4B</color>
     <color name="colorPrimaryDark">#9E3535</color>
     <color name="colorAccent">#03A9F4</color>
+
     <color name="fleurRed">#CD4B4B</color>
     <color name="fleurBg">#F5F3EF</color>
     <color name="colorSubtitle">#757575</color>
+
+    <color name="white" >#ffffff</color>
+    <color name="black" >#000000</color>
 </resources>

@@ -70,4 +70,7 @@
     <string name="fleur_tales_detail">Jl. Cendana 4, Kedamaian, Kota Bandar Lampung, Lampung 35122, No telp 085106588185</string>
 
     <string name="change_language_settings">Ubah Bahasa</string>
+    <string name="date">April 4, 2021</string>
+    <string name="bunga_desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</string>
+    <string name="anggrek_latin">Orchidaceae</string>
 </resources>
