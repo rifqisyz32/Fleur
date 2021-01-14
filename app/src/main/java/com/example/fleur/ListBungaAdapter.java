@@ -69,10 +69,10 @@ public class ListBungaAdapter extends RecyclerView.Adapter<ListBungaAdapter.List
 
                 container_dialog.setAnimation(AnimationUtils.loadAnimation(mContext,R.anim.fade_scale_animation));
                 img_photo_dialog.setAnimation(AnimationUtils.loadAnimation(mContext,R.anim.fade_transition_animation));
-                tv_name_dialog.setText(list.get(viewHolder.getAdapterPosition()).getName());
-                tv_latin_dialog.setText(list.get(viewHolder.getAdapterPosition()).getLatin());
-                tv_desc_dialog.setText(list.get(viewHolder.getAdapterPosition()).getDescription());
-                img_photo_dialog.setImageResource(list.get(viewHolder.getAdapterPosition()).getPhoto());
+                tv_name_dialog.setText(listFiltered.get(viewHolder.getAdapterPosition()).getName());
+                tv_latin_dialog.setText(listFiltered.get(viewHolder.getAdapterPosition()).getLatin());
+                tv_desc_dialog.setText(listFiltered.get(viewHolder.getAdapterPosition()).getDescription());
+                img_photo_dialog.setImageResource(listFiltered.get(viewHolder.getAdapterPosition()).getPhoto());
 
                 ldialog.show();
             }
