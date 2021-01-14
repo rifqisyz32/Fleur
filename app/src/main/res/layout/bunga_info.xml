@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="300dp"
     android:layout_height="wrap_content"
+    android:id="@+id/bunga_info"
     android:layout_gravity="center">
 
     <LinearLayout
@@ -10,7 +11,7 @@
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/card_bg"
+        android:background="@drawable/card_bg_temp"
         android:orientation="vertical"
         android:gravity="center_horizontal">
         
@@ -36,7 +37,7 @@
 
         <TextView
             android:id="@+id/tv_desc_dialog"
-            style="@style/TextContent"
+            style="@style/TextContent.Black"
             android:layout_width="280dp"
             android:layout_height="140dp"
             android:lineSpacingExtra="6dp"

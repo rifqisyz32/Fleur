@@ -36,7 +36,7 @@ public class ListTabAdapter extends RecyclerView.Adapter<ListTabAdapter.ListTabV
     @Override
     public ListTabViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View v;
-        v = LayoutInflater.from(mContext).inflate(R.layout.item_list_bunga, viewGroup,false);
+        v = LayoutInflater.from(mContext).inflate(R.layout.frag_list_bunga, viewGroup,false);
         final ListTabViewHolder listTabViewHolder = new ListTabViewHolder((v));
 
         ldialog = new Dialog(mContext);
