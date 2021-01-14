@@ -4,12 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_list"
-        android:title="@string/list"
+        android:id="@+id/action_language"
+        android:title="@string/change_language"
         app:showAsAction="never"/>
 
     <item
-        android:id="@+id/action_staggered"
-        android:title="@string/staggered"
+        android:id="@+id/action_display"
+        android:title="@string/change_display"
         app:showAsAction="never"/>
 </menu>

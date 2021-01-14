@@ -1,8 +1,10 @@
 package com.example.fleur;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -10,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toolbar;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -19,10 +22,13 @@ public class HomeActivity extends AppCompatActivity {
     private Button btnTokoBunga;
     private Button btnTabBunga;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.home_temp)));
 
         btnArtiBunga = (Button)findViewById(R.id.btn_arti_bunga);
 
@@ -57,15 +63,26 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.language, menu);
+        getMenuInflater().inflate(R.menu.menu_home, menu);
         return super.onCreateOptionsMenu(menu);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_change_settings) {
-            Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
-            startActivity(mIntent);
-        }
+        setMode(item.getItemId());
         return super.onOptionsItemSelected(item);
+    }
+
+    public void setMode(int selectedMode) {
+        switch (selectedMode) {
+            case R.id.action_display:
+                Intent dIntent = new Intent(Settings.ACTION_DISPLAY_SETTINGS);
+                startActivity(dIntent);
+                break;
+
+            case R.id.action_language:
+                Intent lIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+                startActivity(lIntent);
+                break;
+        }
     }
 }

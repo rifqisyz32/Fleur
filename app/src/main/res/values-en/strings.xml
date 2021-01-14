@@ -113,5 +113,6 @@
     <string name="els_florist_detail">Jl Labuhan Ratu, Bandar Lampung, No telp 088706451533</string>
     <string name="fleur_tales_detail">Jl. Cendana 4, Kedamaian, Kota Bandar Lampung, Lampung 35122, No telp 085106588185</string>
 
-    <string name="change_language_settings">Change Language</string>
+    <string name="change_language">Change Language</string>
+    <string name="change_display">Change Display</string>
 </resources>

@@ -37,7 +37,7 @@
 
         <TextView
             android:id="@+id/tv_desc_dialog"
-            style="@style/TextContent.Black"
+
             android:layout_width="280dp"
             android:layout_height="140dp"
             android:lineSpacingExtra="6dp"
