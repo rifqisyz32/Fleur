@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fleur">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,22 +13,22 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeActivity"
-            android:theme="@style/Menu"
-            android:label=" ">
-        </activity>
-        <activity android:name=".MenuArtiBunga">
-        </activity>
-        <activity android:name=".MenuTokoBunga"
-            android:theme="@style/Menu"
-            android:label="@string/toko_bunga">
-        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label=" "
+            android:theme="@style/Menu" />
+        <activity android:name=".TabBunga"/>
+<!--        <activity android:name=".StaggeredArtiBunga"/>-->
+        <activity android:name=".MenuArtiBunga"/>
+        <activity
+            android:name=".MenuTokoBunga"
+            android:label="@string/toko_bunga"
+            android:theme="@style/Menu" />
     </application>
-        <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>

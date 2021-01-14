@@ -4,6 +4,7 @@
     <string name="arti_bunga">Cari Arti Bunga</string>
     <string name="toko_bunga">Cari Toko Bunga</string>
     <string name="nama_bunga">Nama Bunga</string>
+    <string name="nama_ilmiah">Nama Ilmiah</string>
     <string name="arti">Arti Bunga :</string>
     <string name="description">Deskripsi</string>
     <string name="favorite">Favorit</string>
@@ -37,6 +38,13 @@
     <string name="daisy_pink">Daisy Merah Muda</string>
     <string name="daisy_orange">Daisy Jingga</string>
     <string name="herbras">Herbras</string>
+    <string name="mawar">Mawar</string>
+    <string name="tulip">Tulip</string>
+    <string name="teratai">Teratai</string>
+    <string name="kembang_sepatu">Kembang Sepatu</string>
+    <string name="kateliya">Kateliya</string>
+    <string name="melati">Melati</string>
+    <string name="aster">Aster</string>
 
     <string name="anggrek_detail">Bunga anggrek dianggap romantis karena bunga ini melambangkan kecantikan, cinta, dan dapat menarik hati.</string>
     <string name="anyelir_putih_detail">Bunga anyelir putih menyimbolkan rasa syukur, cinta yang murni, kesetiaan, dan cinta yang menggebu dan mendalam.</string>
@@ -51,6 +59,34 @@
     <string name="daisy_pink_detail">Bunga daisy merah muda memancarkan aura yang manis karena warna merah muda memang terlihat lembut.</string>
     <string name="daisy_orange_detail">Bunga daisy orange memiliki arti bahagia dan suka cita.</string>
     <string name="herbras_detail">Bunga herbras melambangkan suatu kecantikan dan bentuk syukur yang Anda sampaikan atas hadirnya seseorang yag Anda anggap penting.</string>
+    <string name="mawar_detail">Tanaman Hiasan bunga yang paling banyak dicari dan disukai oleh semua orang. Karena dengan warna dan bentuknya yang cantik, serta wanginya yang harum mampu menggugah perasaan seseorang</string>
+    <string name="tulip_detail">Bunga Tulip yang banyak tumbuh dan terkenal di negara Belanda, juga merupakan jenis Hiasan Bunga yang banyak dicari. Bunga ini tumbuh di musim dingin, dan tidak dapat tumbuh subur di tempat yang beriklim tropis.</string>
+    <string name="teratai_detail">Bunga Teratai lebih dikenal masyarakat dunia dengan nama Water lily. Namun Bunga Hiasan ini bukanlah jenis dari bunga Lily. Bunga ini adalah bunga dari tanaman yang hidup dan tumbuh di permukaan air.</string>
+    <string name="kembang_sepatu_detail">Kembang Sepatu berasal dari Asia Timur. Bunga ini juga dapat dijadikan sebagai tanaman hias karena warna-warnanya yang cantik.</string>
+    <string name="kateliya_detail">Bunga Kamboja berasal dari Amerika Tengah dan banyak tumbuh di Meksiko dan Venezuela. Bunga ini lebih dikenal dengan nama Plumeria, yang diambil dari nama seorang ahli tanaman yang berasal dari Perancis dan terkenal pada abad ke-17, yaitu Charles Plumier..</string>
+    <string name="melati_detail">Bunga yang tumbuh setiap tahun ini memiliki wangi yang sangat harum dan khas. Bunga ini tumbuh di daerah tropis dan mekar pada musim semi atau musim panas..</string>
+    <string name="aster_detail">Sebuah taman bunga tidak lengkap bila tidak ada Tanaman Hiasan bunga Aster. Bunga dengan banyak jenis dan warna yang cantik ini mencerminkan keriangan, kegembiraan dan kesederhanaan.</string>
+
+    <string name="anggrek_latin">Orchidaceae</string>
+    <string name="anyelir_putih_latin">Dianthus caryophyllus</string>
+    <string name="anyelir_kuning_latin">Dianthus caryophyllus</string>
+    <string name="anyelir_merah_latin">Dianthus caryophyllus</string>
+    <string name="anyelir_pink_latin">Dianthus caryophyllus</string>
+    <string name="anyelir_ungu_latin">Dianthus caryophyllus</string>
+    <string name="daisy_putih_latin">Bellis Perennis</string>
+    <string name="daisy_kuning_latin">Bellis Perennis</string>
+    <string name="daisy_ungu_latin">Bellis Perennis</string>
+    <string name="daisy_merah_latin">Bellis Perennis</string>
+    <string name="daisy_pink_latin">Bellis Perennis</string>
+    <string name="daisy_orange_latin">Bellis Perennis</string>
+    <string name="herbras_latin">Garbera</string>
+    <string name="mawar_latin">Rosa</string>
+    <string name="tulip_latin">Tulipa</string>
+    <string name="teratai_latin">Nymphaea</string>
+    <string name="kembang_sepatu_latin">Hibiscus rosa-sinensis</string>
+    <string name="kateliya_latin">Cattleya</string>
+    <string name="melati_latin">Jasminum</string>
+    <string name="aster_latin">Asteraceae</string>
 
     <string name="adisty_florist">Adisty Florist</string>
     <string name="and_florist">And Florist</string>
@@ -72,5 +108,8 @@
     <string name="change_language_settings">Ubah Bahasa</string>
     <string name="date">April 4, 2021</string>
     <string name="bunga_desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</string>
-    <string name="anggrek_latin">Orchidaceae</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_bunga">Tampilan Tab</string>
+    <string name="staggered">Staggered</string>
 </resources>

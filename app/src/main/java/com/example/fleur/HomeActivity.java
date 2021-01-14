@@ -11,37 +11,49 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.tabs.TabLayout;
 
-public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
+
+public class HomeActivity extends AppCompatActivity {
     private Button btnArtiBunga;
     private Button btnTokoBunga;
+    private Button btnTabBunga;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
         btnArtiBunga = (Button)findViewById(R.id.btn_arti_bunga);
-        btnArtiBunga.setOnClickListener(this);
 
         btnTokoBunga = (Button)findViewById(R.id.btn_toko_bunga);
-        btnTokoBunga.setOnClickListener(this);
 
-    }
+        btnTabBunga = (Button)findViewById(R.id.btn_tab_bunga);
 
-    @Override
-    public void onClick(View v){
-        switch (v.getId()){
 
-            case R.id.btn_arti_bunga:
-                Intent moveToMenuBunga = new Intent(HomeActivity.this, MenuArtiBunga.class);
-                startActivity (moveToMenuBunga);
-                break;
+        btnArtiBunga.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent moveToMenuBunga = new Intent(HomeActivity.this, MenuArtiBunga.class);
+                    startActivity (moveToMenuBunga);
+                }
+        });
 
-            case R.id.btn_toko_bunga:
+        btnTokoBunga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent moveToTokoBunga = new Intent(HomeActivity.this, MenuTokoBunga.class);
                 startActivity (moveToTokoBunga);
-                break;
-        }
+            }
+        });
+
+        btnTabBunga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent moveToTabBunga = new Intent(HomeActivity.this, TabBunga.class);
+                startActivity (moveToTabBunga);
+            }
+        });
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {

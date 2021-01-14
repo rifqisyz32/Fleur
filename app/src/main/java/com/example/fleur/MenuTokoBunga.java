@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class MenuTokoBunga extends AppCompatActivity {
+
     private RecyclerView rvSellers;
     private ArrayList<Toko> list = new ArrayList<>();
     private String title = "Cari Toko";

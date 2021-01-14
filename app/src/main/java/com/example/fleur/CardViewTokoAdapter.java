@@ -60,7 +60,7 @@ public class CardViewTokoAdapter extends RecyclerView.Adapter<CardViewTokoAdapte
             holder.itemView.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-            Toast.makeText(holder.itemView.getContext(), "Kamu memilih " + listToko.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(holder.itemView.getContext(), R.string.you_choose + listToko.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
             }
             });
 

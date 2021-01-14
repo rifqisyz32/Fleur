@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/search"
-        android:icon="@drawable/ic_search_white_24dp"
-        android:title="@string/search"
-        app:actionViewClass="androidx.appcompat.widget.SearchView"
-        app:showAsAction="collapseActionView|always" />
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
         android:id="@+id/action_list"
         android:title="@string/list"
         app:showAsAction="never"/>
+
     <item
-        android:id="@+id/action_grid"
-        android:title="@string/grid"
-        app:showAsAction="never"/>
-    <item
-        android:id="@+id/action_cardview"
-        android:title="@string/cardview"
+        android:id="@+id/action_staggered"
+        android:title="@string/staggered"
         app:showAsAction="never"/>
 </menu>
