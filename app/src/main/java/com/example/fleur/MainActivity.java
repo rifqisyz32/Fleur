@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                         progressBar.setProgress(w); // Memasukan Value pada ProgressBar
                         // Mengirim pesan dari handler, untuk diproses didalam thread
                         handler.sendMessage(handler.obtainMessage());
-                        Thread.sleep(100); // Waktu Pending 100ms/0.1 detik
+                        Thread.sleep(50); // Waktu Pending 100ms/0.1 detik
                     }
                 }catch(InterruptedException ex){
                     ex.printStackTrace();

@@ -73,12 +73,12 @@ public class MenuArtiBunga extends AppCompatActivity {
         if (isDark) {
             // dark theme is on
             searchInput.setBackgroundResource(R.drawable.search_input_dark_style);
-            rootLayout.setBackgroundColor(getResources().getColor(R.color.black));
+            rootLayout.setBackgroundColor(getResources().getColor(R.color.black_temp));
 
         } else {
             // light theme is on
             searchInput.setBackgroundResource(R.drawable.search_input_style);
-            rootLayout.setBackgroundColor(getResources().getColor(R.color.white));
+            rootLayout.setBackgroundColor(getResources().getColor(R.color.white_temp));
 
         }
         // fill list news with data
@@ -134,11 +134,11 @@ public class MenuArtiBunga extends AppCompatActivity {
                 isDark = !isDark;
                 if (isDark) {
 
-                    rootLayout.setBackgroundColor(getResources().getColor(R.color.black));
+                    rootLayout.setBackgroundColor(getResources().getColor(R.color.black_temp));
                     searchInput.setBackgroundResource(R.drawable.search_input_dark_style);
 
                 } else {
-                    rootLayout.setBackgroundColor(getResources().getColor(R.color.white));
+                    rootLayout.setBackgroundColor(getResources().getColor(R.color.white_temp));
                     searchInput.setBackgroundResource(R.drawable.search_input_style);
                 }
 

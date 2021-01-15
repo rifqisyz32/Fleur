@@ -64,12 +64,12 @@ public class MenuTokoBunga extends AppCompatActivity {
         if (isDark2) {
             // dark theme is on
             searchInput.setBackgroundResource(R.drawable.search_input_dark_style);
-            rootLayout.setBackgroundColor(getResources().getColor(R.color.black));
+            rootLayout.setBackgroundColor(getResources().getColor(R.color.black_temp));
 
         } else {
             // light theme is on
             searchInput.setBackgroundResource(R.drawable.search_input_style);
-            rootLayout.setBackgroundColor(getResources().getColor(R.color.white));
+            rootLayout.setBackgroundColor(getResources().getColor(R.color.white_temp));
 
         }
         // fill list news with data
@@ -113,11 +113,11 @@ public class MenuTokoBunga extends AppCompatActivity {
                 isDark2 = !isDark2;
                 if (isDark2) {
 
-                    rootLayout.setBackgroundColor(getResources().getColor(R.color.black));
+                    rootLayout.setBackgroundColor(getResources().getColor(R.color.black_temp));
                     searchInput.setBackgroundResource(R.drawable.search_input_dark_style);
 
                 } else {
-                    rootLayout.setBackgroundColor(getResources().getColor(R.color.white));
+                    rootLayout.setBackgroundColor(getResources().getColor(R.color.white_temp));
                     searchInput.setBackgroundResource(R.drawable.search_input_style);
                 }
 

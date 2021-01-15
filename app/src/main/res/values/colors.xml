@@ -21,6 +21,8 @@
     <color name="fleurBg">#F5F3EF</color>
     <color name="colorSubtitle">#757575</color>
 
-    <color name="white" >#ffffff</color>
+    <color name="white" >#FFFFFF</color>
     <color name="black" >#000000</color>
+    <color name="white_temp" >#FFFFFF</color>
+    <color name="black_temp" >#303030</color>
 </resources>

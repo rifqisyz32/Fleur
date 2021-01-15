@@ -4,9 +4,13 @@
     <color name="card_bg_dark_color_temp">#f6f6f6</color>
     <color name="home_temp">#303030</color>
     <color name="home_bg_temp">#303030</color>
+    <color name="white_temp" >#FFFFFF</color>
+    <color name="black_temp" >#303030</color>
 
     <color name="colorPrimary">#303030</color>
     <color name="colorPrimaryDark">#202020</color>
     <color name="colorAccent">#03DAC5</color>
 
+    <color name="white" >#FFFFFF</color>
+    <color name="black" >#000000</color>
 </resources>
