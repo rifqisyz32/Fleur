@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 super.handleMessage(msg);
                 // Menampung semua data yang ingin diproses oleh thread
                 persentase.setText(String.valueOf(Value)+"%");
+
                 if(Value == progressBar.getMax()){
                     Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(MainActivity.this, HomeActivity.class));

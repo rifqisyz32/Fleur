@@ -1,32 +1,41 @@
 package com.example.fleur;
 
 public class Toko {
-    private int photo;
-    private int name;
-    private int from;
+    private String Name,Description;
+    private int Photo;
+
+    public Toko(){}
+
+    public Toko(String name, String description, int Photo) {
+        Name = name;
+        Description = description;
+        this.Photo = Photo;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
+    }
+
+    public void setPhoto(int Photo) {
+        this.Photo = Photo;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
 
     public int getPhoto() {
-        return photo;
+
+        return Photo;
     }
 
-    public void setPhoto(int photo) {
-        this.photo = photo;
-    }
-
-    public int getName() {
-        return name;
-    }
-
-    public void setName(int name) {
-        this.name = name;
-    }
-
-    public int getFrom() {
-        return from;
-    }
-
-    public void setFrom(int from) {
-        this.from = from;
-    }
 }
 

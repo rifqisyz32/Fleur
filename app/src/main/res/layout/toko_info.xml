@@ -3,11 +3,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="300dp"
     android:layout_height="wrap_content"
-    android:id="@+id/bunga_info"
+    android:id="@+id/toko_info"
     android:layout_gravity="center">
 
     <LinearLayout
-        android:id="@+id/container_dialog"
+        android:id="@+id/container_dialog2"
         android:layout_marginTop="50dp"
         android:padding="10dp"
         android:layout_width="match_parent"
@@ -15,9 +15,9 @@
         android:background="@drawable/card_bg_temp"
         android:orientation="vertical"
         android:gravity="center_horizontal">
-        
+
         <TextView
-            android:id="@+id/tv_name_dialog"
+            android:id="@+id/tv_name_dialog2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/nama_bunga"
@@ -27,7 +27,7 @@
             android:layout_marginTop="90dp"/>
 
         <TextView
-            android:id="@+id/tv_latin_dialog"
+            android:id="@+id/tv_latin_dialog2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/nama_ilmiah"
@@ -37,7 +37,7 @@
             android:layout_marginBottom="15dp"/>
 
         <TextView
-            android:id="@+id/tv_desc_dialog"
+            android:id="@+id/tv_desc_dialog2"
 
             android:layout_width="280dp"
             android:layout_height="140dp"
@@ -47,38 +47,11 @@
             android:textAlignment="center"
             android:textSize="14dp"
             android:transitionName="descTN" />
-<!--
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp">
-
-        <Button
-            android:id="@+id/btn_fav_bunga"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="140dp"
-            android:layout_marginRight="10dp"
-
-            android:background="@drawable/fav_bg"
-            android:transitionName="favTN" />
-
-        <Button
-            android:transitionName="strTN"
-            android:id="@+id/btn_str_bunga"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/store_bg" />
-        </LinearLayout>-->
 
     </LinearLayout>
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/img_photo_dialog"
+        android:id="@+id/img_photo_dialog2"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/anggrek"
