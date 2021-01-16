@@ -63,7 +63,6 @@ public class HomeActivity extends AppCompatActivity {
         btnTabBunga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendOnChannel2(v);
                 Intent moveToTabBunga = new Intent(HomeActivity.this, TabBunga.class);
                 startActivity (moveToTabBunga);
             }
@@ -93,31 +92,6 @@ public class HomeActivity extends AppCompatActivity {
                 .build();
 
         notificationManagerCompat.notify(1,notification);
-    }
-
-    public void sendOnChannel2(View v){
-
-        /*Intent bungaIntent = new Intent(this, MenuTokoBunga.class);
-        PendingIntent contentIntent = PendingIntent.getActivity(this,0,bungaIntent,0);*/
-
-        Intent broadcastIntent = new Intent(this, NotificationReceiver.class);
-        broadcastIntent.putExtra("toastMessage", "Have Fun!");
-        PendingIntent actionIntent = PendingIntent.getBroadcast(this,0,broadcastIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-
-        Notification notification = new NotificationCompat.Builder(this, Notifications.CHANNEL_2_ID)
-                .setSmallIcon(R.drawable.fleur_logo)
-                .setContentTitle(getString(R.string.hello_user))
-                .setContentText(getString(R.string.welcome))
-                .setPriority(NotificationCompat.PRIORITY_LOW)
-                .setCategory(NotificationCompat.CATEGORY_MESSAGE)
-                .setColor(getResources().getColor(R.color.colorAccent))
-//                .setContentIntent(contentIntent)
-                .setAutoCancel(true)
-                .setOnlyAlertOnce(true)
-                .addAction(R.drawable.fleur_logo, "Got It!", actionIntent)
-                .build();
-
-        notificationManagerCompat.notify(2,notification);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
