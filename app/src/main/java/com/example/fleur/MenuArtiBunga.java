@@ -32,6 +32,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class MenuArtiBunga extends AppCompatActivity {
@@ -147,6 +149,7 @@ public class MenuArtiBunga extends AppCompatActivity {
                     listBungaAdapter.getFilter().filter(search);
                 }
                 rvFlowers.setAdapter(listBungaAdapter);
+                sortArrayList();
                 saveThemeStatePref(isDark);
             }
         });
@@ -166,6 +169,17 @@ public class MenuArtiBunga extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
             }
         });
+    }
+
+    private void sortArrayList(){
+        Collections.sort(list, new Comparator<Bunga>() {
+            @Override
+            public int compare(Bunga o1, Bunga o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
+
+        });
+        listBungaAdapter.notifyDataSetChanged();
     }
 
     private void saveThemeStatePref(boolean isDark) {
