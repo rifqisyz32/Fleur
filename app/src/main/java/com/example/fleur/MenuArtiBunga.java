@@ -102,14 +102,17 @@ public class MenuArtiBunga extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 isDark = !isDark;
-                if (isDark) {
 
+                if (isDark) {
                     rootLayout.setBackgroundColor(getResources().getColor(R.color.black_temp));
                     searchInput.setBackgroundResource(R.drawable.search_input_dark_style);
+                    sortArrayList();
+                }
 
-                } else {
+                else {
                     rootLayout.setBackgroundColor(getResources().getColor(R.color.white_temp));
                     searchInput.setBackgroundResource(R.drawable.search_input_style);
+                    reverseArrayList();
                 }
 
                 listBungaAdapter = new ListBungaAdapter(getApplicationContext(), list, isDark);
@@ -117,7 +120,6 @@ public class MenuArtiBunga extends AppCompatActivity {
                     listBungaAdapter.getFilter().filter(search);
                 }
                 rvFlowers.setAdapter(listBungaAdapter);
-                sortArrayList();
                 saveThemeStatePref(isDark);
                 showBungaList();
             }
@@ -151,6 +153,17 @@ public class MenuArtiBunga extends AppCompatActivity {
             @Override
             public int compare(Bunga o1, Bunga o2) {
                 return o1.getName().compareTo(o2.getName());
+            }
+
+        });
+        listBungaAdapter.notifyDataSetChanged();
+    }
+
+    private void reverseArrayList(){
+        Collections.sort(list, new Comparator<Bunga>() {
+            @Override
+            public int compare(Bunga o1, Bunga o2) {
+                return o2.getName().compareTo(o1.getName());
             }
 
         });
